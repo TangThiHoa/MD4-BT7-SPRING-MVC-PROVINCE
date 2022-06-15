@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" >
+    <input type="hidden" th:field="${pro.id}">
+    <input type="text" name="name" th:value="${pro.name}">
+    <input type="text" name="description" th:value="${pro.description}">
+    <button>sửa</button>
+</form>
+
+</body>
+</html>

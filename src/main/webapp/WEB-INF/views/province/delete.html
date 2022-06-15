@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" th:action="@{/province/delete}" th:object="${pro}">
+    <input type="hidden" th:field="*{id}">
+    <input type="text" name="name" th:field="*{name}">
+    <input type="text" name="description" th:field="*{description}">
+    <button>Xóa</button>
+</form>
+</body>
+</html>

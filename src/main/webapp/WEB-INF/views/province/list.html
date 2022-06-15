@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/province/create">
+    Tạo mới tỉnh
+</a>
+<div  th:each="pro : ${province}" >
+    <span th:text="${pro.name}"></span>
+    <span th:text="${pro.description}"></span>
+    <a th:href="@{/province/edit/__${pro.id}__}">Sửa</a>
+    <a th:href="@{/province/delete/__${pro.id}__}">Xóa</a>
+</div>
+</body>
+</html>
